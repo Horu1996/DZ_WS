@@ -23,6 +23,53 @@ const Profile = ()=>{
   </div>
 }
 
+const Settings = ()=>{
+  return <div className="row">
+    <div className="col-10">
+      Имя Иван<br/>
+      Фамилия Иванов<br/>
+      email<br/>
+      id 1
+    </div>
+  </div>
+}
+
+
+
+const Users = ()=>{
+  return <table className="table">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Имя</th>
+      <th scope="col">Фамилия</th>
+      <th scope="col">Username</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+    </tbody>
+  </table>
+}
+
+
 function App() {
   return (
     <div className="container-fluid">
@@ -33,8 +80,8 @@ function App() {
           </div>
           <div className="col-9">
             <Route path="/profile" render={()=>{return <Profile/>}}/>
-            <Route path="/settings" render={()=>{return <h1>Это Настройки</h1>}}/>
-            <Route path="/users" render={()=>{return <h1>Это список пользователей</h1>}}/>
+            <Route path="/settings" render={()=>{return <Settings/>}}/>
+            <Route path="/users" render={()=>{return <Users/>}}/>
           </div>
         </div>
       </BrowserRouter>
