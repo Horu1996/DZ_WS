@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 const Tr = (props)=>{
     return <tr>
         <th scope="row">{props.index}</th>
-        <td><NavLink to={"user/"+props.userId}>{props.name} {props.lastname}</NavLink></td>
+        <td><NavLink to={"user/"+props.userId}>{props.adress}</NavLink></td>
         <td>{props.email}</td>
     </tr>
 }
@@ -23,25 +23,27 @@ export class Users extends React.Component{
             .then(users=>{
                 let usersArray;
                 usersArray = users.map((user,index)=>{
-                    return <Tr userId={user.id} name={user.name} lastname={user.lastname} index={index+1} email={user.email}/>;
+                    return <Tr userId={user.id} adress={user.adress}  index={index+1} email={user.email}/>;
                 })
                 this.setState({users:usersArray});
             })
     }
 
     render() {
-        return <table className="table">
-            <thead className="thead-dark">
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Имя Фамилия</th>
-                <th scope="col">E-mail</th>
-            </tr>
-            </thead>
-            <tbody>
-            {this.state.users}
-            </tbody>
-        </table>
+        return <div>
+            <table className="table table-striped">
+                <thead >
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Адрес</th>
+                    <th scope="col">E-mail</th>
+                </tr>
+                </thead>
+                <tbody>
+                {this.state.users}
+                </tbody>
+            </table>
+        </div>
     }
 
 
