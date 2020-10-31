@@ -1,4 +1,5 @@
 import React from "react";
+import {host} from "../config";
 
 export class Profile extends React.Component{
     constructor() {
@@ -6,14 +7,17 @@ export class Profile extends React.Component{
         this.state = {
             userName: "",
             userAdress:"",
-            userRepair:""
+            userRepair:"",
+            userId:""
         }
     }
     componentDidMount() {
         const formData = new FormData();
-        let userId = window.location.pathname.split("/")[2];
+        const uri = window.location.pathname.split("/");
+        const userId = uri[uri.length-1];
+        this.setState({userId:userId})
         formData.append("userId",userId);
-        fetch("http://u96470ux.beget.tech/getUser",{
+        fetch(host+"getUser",{
             method: "POST",
             body: formData
         })

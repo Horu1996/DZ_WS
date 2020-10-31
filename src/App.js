@@ -5,6 +5,7 @@ import {Menu} from "./components/Menu";
 import {Profile} from "./components/Profile";
 
 import {Users} from "./components/Users";
+import {bdsmPath} from "./config";
 
 
 function App() {
@@ -17,9 +18,9 @@ function App() {
             <Menu/>
           </div>
           <div className="col-9">
-            <Route exact path="/profile" render={()=>{return <Profile/>}}/>
-            <Route path="/user" render={()=>{return <Profile/>}}/>
-            <Route path="/users" render={()=>{return <Users/>}}/>
+            <Route exact path={bdsmPath+"/profile"} render={()=>{return <Profile/>}}/>
+            <Route path={bdsmPath+"/user"} render={()=>{return <Profile/>}}/>
+            <Route path={bdsmPath+"/users"} render={()=>{return <Users/>}}/>
           </div>
         </div>
       </BrowserRouter>

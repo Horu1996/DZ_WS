@@ -1,10 +1,11 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
+import {bdsmPath, host} from "../config";
 
 const Tr = (props)=>{
     return <tr>
         <th scope="row">{props.index}</th>
-        <td><NavLink to={"user/"+props.userId}>{props.adress}</NavLink></td>
+        <td><NavLink to={bdsmPath+"/user/"+props.userId}>{props.adress}</NavLink></td>
         <td>{props.email}</td>
     </tr>
 }
@@ -18,7 +19,7 @@ export class Users extends React.Component{
     }
 
     componentDidMount() {
-        fetch("http://u96470ux.beget.tech/getUsers")
+        fetch(host+"getUsers")
             .then(response=>response.json())
             .then(users=>{
                 let usersArray;

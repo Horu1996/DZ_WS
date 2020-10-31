@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36c6dab0-3b45-438c-9785-ffe176c22c3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
+    <list default="true" id="36c6dab0-3b45-438c-9785-ffe176c22c3b" name="Default Changelist" comment="31.10.2020">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Settings.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
       <workItem from="1603012429225" duration="9285000" />
       <workItem from="1603445362327" duration="5591000" />
       <workItem from="1604060043359" duration="2080000" />
-      <workItem from="1604091224570" duration="4541000" />
+      <workItem from="1604091224570" duration="8250000" />
     </task>
     <task id="LOCAL-00001" summary="18.10.2020">
       <created>1603024787436</created>
@@ -66,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603024787436</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="31.10.2020">
+      <created>1604099278486</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604099278486</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,21 +80,27 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="18.10.2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="18.10.2020" />
+    <MESSAGE value="31.10.2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="31.10.2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="551" y="275" key="#ESLint" timestamp="1604093469179">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="551" y="275" key="#ESLint/0.0.1366.768/-1920.0.1920.1080@0.0.1366.768" timestamp="1604093469179" />
+    <state x="309" y="61" key="#Inspections" timestamp="1604100607163">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="309" y="61" key="#Inspections/0.0.1366.768/-1920.0.1920.1080@0.0.1366.768" timestamp="1604100607163" />
     <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604093812896">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768/-1920.0.1920.1080@0.0.1366.768" timestamp="1604093812896" />
-    <state x="188" y="0" key="CommitChangelistDialog2" timestamp="1603024785360">
+    <state x="188" y="0" key="CommitChangelistDialog2" timestamp="1604101279086">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="188" y="0" key="CommitChangelistDialog2/0.0.1366.768/-1920.0.1920.1080@0.0.1366.768" timestamp="1603024785360" />
+    <state x="-1656" y="0" key="CommitChangelistDialog2/0.0.1366.768/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604099274289" />
+    <state x="188" y="0" key="CommitChangelistDialog2/0.0.1366.768/-1920.0.1920.1080@0.0.1366.768" timestamp="1604101279086" />
     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1604091725835">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
